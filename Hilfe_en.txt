@@ -1,0 +1,117 @@
+
+ABOUT:
+Have you ever dreamed of leaving secret messages online for only select individuals to read?
+With LoveSpeech, your messages are password-encrypted and then transformed to resemble foreign language sprinkled with emojis. You’ll have a user list complete with usernames and passwords, allowing you to post secret messages online to specific individuals and read their secret communications as well.
+And the best part? You can do this in plain sight! Whether on Facebook, X (formerly Twitter), YouTube, and more, your messages will remain a mystery — unless you’re on someone’s buddy list.
+Playfully troll your friends by posting encrypted comments or even form secret societies with closed user groups that exchange hidden messages right in the open. Plus, you can also encrypt and publicly share your buddy list.
+Feel free to create your own passwords or generate strong ones (recommented) at the click of a button. LoveSpeech adds a whole new level of excitement to online communication!
+
+
+LANGUAGES:
+1. Click on the globe in top right corner of the the app bar. Select the language you like best.
+
+
+ENCRYPTION:
+1. Choose any nickname and password for yourself.
+2. Choose a style (default is the Braille character set of the blind)
+3. Type in your secret message.
+4. Press <Encrypt>.
+5. The cipher has been copied to the clipboard and can be posted on Social Media platforms.
+
+                
+DECRYPTION:
+1. If you happen to find a LoveSpeech-Message on the internet, first copy it into your clipboard.
+2. Go back to this App. That clipboard will automatically show up.
+3. Press <Decrypt>.
+4. The original message has appeared.
+
+
+STYLES:
+1. Click on the flag.
+2. Select a style from the menu:
+- Neutral = Standard Ascii Character Set 0..0xFF
+- Russian = Cyrillic Character Set 0x400..0x4FF
+- Arabic = Arabic Character Set 0x600..0x6FF
+- Chinese (rare) = Asian Character Set 0x3400..0x34FF
+- Chinese (common) = Asian Character Set 0x4E00..0x4EFF
+- Yi - Symbols = Asian Yi (Feng Shui) Character Set 0xA000..0xA0FF
+- Korean = Korean Character Set 0xAC00..0xACFF
+- Hieroglyphic = Ancient Egypt hieroglyphic Character Set 0x13000..0x130FF
+- Braille Patterns = Character Set of the Blind
+- Sumerian = Ancient Sumerian Character Set (Windows only)
+- Minoan = Ancient Minoan Character Set (Windows only)
+- Bamum Symbols = African Bamum Character Set (Windows only)
+
+
+EMOJIS:
+- Click on that Emoji-Symbol in the top right corner of the app to either enable or disable Emojis.
+
+
+THEMES:
+- Click on the Image-Symbol in the top right corner and select one of the images from the menu to change the design.
+
+
+BUDDIES:
+- Click on the + symbol in the top right corner of the app. Now enter a nickname and a password (or generate a strong password).
+- Click on a name in the buddy list to change his password.
+
+
+EXPORT USER LIST:
+- Click on Export User List. Your buddy list will now appear in the text window. You can encrypt it and share it on the internet or via some messenging app.
+
+
+SEND EMAIL:
+- Input some text
+- Encrypt it or not (however you like it)
+- Click the arrow on the right corner of the text field.
+- A menu opens up
+- Enter a valid email address and a subject (optional)
+- Press <Send>
+- Your default email app will open up ready to send the message.
+
+
+IMPORT USER LIST:
+- Get someone's buddy list. That can either be encrypted or not. If it is encrypted, click on <decrypt> to get the raw text.
+- Click on Import User List. All users in that list will be imported into your buddy list. If a nickname already exists, only the password will be updated.
+
+
+CREATE SECRET SOCIETY:
+- To create a secret society, create a name and password and share it with friends.
+- Get their buddy lists too to read their comments or use one common buddy for the whole society.
+- To share names and passwords, simply encrypt them and post them on the internet or send them as email. After all your friends received the buddy list, delete that post again.
+- You can continue to share secret information on the internet, after your secret society has shared all their passwords. No one will ever be able to decipher your messages.
+- Single buddies can be kicked out simply by changing the passwords.
+
+
+PROBLEMS:
+Make sure you selected the right buddy when encrypting text.
+That can either be you or a friend in your list.
+
+Make sure you post everything from the clipboard, after encryption.
+Otherwise, your readers will not be able to decipher what you've written.
+
+Make sure you get everything into the clipboard when decrypting.
+Otherwise the format cannot be detected, username and public key will be unrecognized and no decryption will take place.
+
+
+ALGORITHM:
+
+1. Random Public Key Generation: Each time a message is encrypted, a random public key is generated and transmitted along with the nickname to ensure uniqueness. Private Key and Public Key are combined.
+
+2. Multiple Encryptions: The whole message is encrypted multiple times based on its length, with a minimum of 3 encryptions. This guarantees that a hacker must decrypt the entire text during a brute-force attack before he can test whether the result is okay for him.
+
+3. Extensive Character Encryption: Each character of the message is encrypted multiple times, destroying its very nature.
+
+4. Self-Modification: With each access to the password, it is self-modified/shuffled, the password-index behaves chaotically, the algorithm is changed from time to time and the password is slowly expanded to 256 bytes.
+
+5. Disguise: After encryption, the cipher is shifted into the range of international Unicode character sets (as determined by the selected language) to resemble mystical script. Additionally, some characters are shifted into the range of Emojis, enhancing the natural appearance of the cipher.
+
+6. Formatting: The final message consists of 3 lines: cipher, nickname and public key. Before and after the cipher block, additional lines can be inserted for fun.
+
+7. The algorithm employs no mechanism to detect whether the password was correct or incorrect. This makes a hacker angry, because he will have to detect that on his own for each possible combination of passwords he might figure out and that takes a long long time for him.
+
+8. If a hacker can probe 1 Million Passwords per Second and the original password was 21 characters long, the whole process of hacking the message will take 1.02 Billion Billion years! Yes, you read right!
+
+9. For highly classified information always use a STRONG password. If you don't, a hacker might use rainbow-tables or word dictionaries to hack your message within minutes. This is probably the most important point and holds true for all passwords you'll ever use in your daily life. Don't forget!
+
+10.Analysers might use neural networks and stable diffusion to DENOISE your encrypted message. If some of the content of the message can be guessed (i.e. empty lines in the beginning or at the end or names or locations), this enables hackers to use a probabilistic approach. They then can calculate thousands of possible messages within your cipher and select the most obvious one. They simply assume, that your message is overlayed by noise and then try to denoise it to the point, where they can assume the text (like a text2image generator, which takes a noise image and a text to create an image).

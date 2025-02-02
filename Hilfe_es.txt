@@ -1,0 +1,99 @@
+ACERCA DE:
+¿Alguna vez has soñado con dejar mensajes secretos en línea para que solo selectas personas los lean? Con LoveSpeech, tus mensajes están cifrados con contraseña y luego transformados para parecerse a un idioma extranjero salpicado de emojis. Tendrás una lista de usuarios completa con nombres de usuario y contraseñas, lo que te permitirá publicar mensajes secretos en línea para individuos específicos y leer sus comunicaciones secretas también. ¿Y la mejor parte? ¡Puedes hacer esto a plena vista! Ya sea en Facebook, X (anteriormente Twitter), YouTube y más, tus mensajes permanecerán como un misterio, a menos que estés en la lista de amigos de alguien. Juega a trolear a tus amigos publicando comentarios cifrados o incluso forma sociedades secretas con grupos de usuarios cerrados que intercambian mensajes ocultos a plena vista. Además, también puedes cifrar y compartir públicamente tu lista de amigos. Siéntete libre de crear tus propias contraseñas o generar contraseñas fuertes (recomendado) con solo presionar un botón. ¡LoveSpeech añade un nuevo nivel de emoción a la comunicación en línea!
+
+IDIOMAS:
+1. Haz clic en el globo en la esquina superior derecha de la barra de la aplicación. Selecciona el idioma que prefieras.
+
+CIFRADO:
+1. Elige cualquier apodo y contraseña para ti.
+2. Elige un estilo (el predeterminado es el conjunto de caracteres en braille para ciegos).
+3. Escribe tu mensaje secreto.
+4. Presiona <Cifrar>.
+5. El cifrado se ha copiado en el portapapeles y puede ser publicado en plataformas de redes sociales.
+
+DESCIFRADO:
+1. Si encuentras un mensaje de LoveSpeech en internet, primero cópialo en tu portapapeles.
+2. Regresa a esta app. Ese portapapeles aparecerá automáticamente.
+3. Presiona <Descifrar>.
+4. El mensaje original ha aparecido.
+
+ESTILOS:
+1. Haz clic en la bandera.
+2. Selecciona un estilo del menú:
+- Neutral = Conjunto de caracteres ASCII estándar 0..0xFF
+- Ruso = Conjunto de caracteres cirílicos 0x400..0x4FF
+- Árabe = Conjunto de caracteres árabe 0x600..0x6FF
+- Chino (raro) = Conjunto de caracteres asiáticos 0x3400..0x34FF
+- Chino (común) = Conjunto de caracteres asiáticos 0x4E00..0x4EFF
+- Yi - Símbolos = Conjunto de caracteres Yi (Feng Shui) asiático 0xA000..0xA0FF
+- Coreano = Conjunto de caracteres coreanos 0xAC00..0xACFF
+- Jeroglífico = Conjunto de caracteres jeroglíficos del antiguo Egipto 0x13000..0x130FF
+- Patrones en braille = Conjunto de caracteres para ciegos
+- Sumerio = Conjunto de caracteres sumerios antiguos (solo Windows)
+- Minoico = Conjunto de caracteres minoicos antiguos (solo Windows)
+- Símbolos Bamum = Conjunto de caracteres Bamum africano (solo Windows)
+
+EMOJIS:
+- Haz clic en el símbolo de Emoji en la esquina superior derecha de la aplicación para habilitar o deshabilitar los emojis.
+
+TEMAS:
+- Haz clic en el símbolo de imagen en la esquina superior derecha y selecciona una de las imágenes del menú para cambiar el diseño.
+
+AMIGOS:
+- Haz clic en el símbolo + en la esquina superior derecha de la aplicación. Ahora ingresa un apodo y una contraseña (o genera una contraseña fuerte).
+- Haz clic en un nombre en la lista de amigos para cambiar su contraseña.
+
+EXPORTAR LISTA DE USUARIOS:
+- Haz clic en Exportar lista de usuarios. Tu lista de amigos aparecerá ahora en la ventana de texto. Puedes cifrarla y compartirla en internet o a través de alguna aplicación de mensajería.
+
+ENVIAR EMAIL:
+- Ingresa algún texto.
+- Cifrarlo o no (como prefieras).
+- Haz clic en la flecha en la esquina derecha del campo de texto.
+- Se abrirá un menú.
+- Ingresa una dirección de correo electrónico válida y un asunto (opcional).
+- Presiona <Enviar>.
+- Tu aplicación de correo electrónico predeterminada se abrirá lista para enviar el mensaje.
+
+IMPORTAR LISTA DE USUARIOS:
+- Obtén la lista de amigos de alguien. Puede estar cifrada o no. Si está cifrada, haz clic en <descifrar> para obtener el texto sin procesar.
+- Haz clic en Importar lista de usuarios. Todos los usuarios en esa lista se importarán a tu lista de amigos. Si un apodo ya existe, solo se actualizará la contraseña.
+
+CREAR SOCIEDAD SECRETA:
+- Para crear una sociedad secreta, crea un nombre y una contraseña y compártela con amigos.
+- También obtén sus listas de amigos para leer sus comentarios o usa un amigo en común para toda la sociedad.
+- Para compartir nombres y contraseñas, simplemente cifrarlos y publicarlos en internet o enviar como correo electrónico. Una vez que todos tus amigos hayan recibido la lista de amigos, elimina esa publicación nuevamente.
+- Puedes continuar compartiendo información secreta en internet, después de que tu sociedad secreta haya compartido todas sus contraseñas. Nadie podrá descifrar tus mensajes.
+- Los amigos individuales pueden ser expulsados simplemente cambiando las contraseñas.
+
+PROBLEMAS:
+Asegúrate de seleccionar el amigo correcto al cifrar texto.
+Ese puede ser tú o un amigo en tu lista.
+
+Asegúrate de publicar todo desde el portapapeles, después de cifrarlo.
+De lo contrario, tus lectores no podrán descifrar lo que has escrito.
+
+Asegúrate de que todo esté en el portapapeles al descifrar.
+De lo contrario, no se podrá detectar el formato, el nombre de usuario y la clave pública no serán reconocidos y no habrá descifrado.
+
+ALGORITMO:
+
+1. Generación aleatoria de clave pública: Cada vez que se cifra un mensaje, se genera y se transmite una clave pública aleatoria junto con el apodo para garantizar la exclusividad. La clave privada y la clave pública se combinan.
+
+2. Múltiples cifrados: Todo el mensaje se cifra múltiples veces según su longitud, con un mínimo de 3 cifrados. Esto garantiza que un hacker debe descifrar el texto completo durante un ataque de fuerza bruta antes de que pueda probar si el resultado está bien para él.
+
+3. Cifrado de caracteres extensivo: Cada carácter del mensaje se cifra múltiples veces, destruyendo su naturaleza misma.
+
+4. Auto-modificación: Con cada acceso a la contraseña, esta se modifica/baraja a sí misma, el índice de la contraseña se comporta de manera caótica, el algoritmo se cambia de vez en cuando y la contraseña se amplía lentamente hasta 256 bytes.
+
+5. Disfraz: Después de cifrar, el código se desplaza al rango de conjuntos de caracteres Unicode internacionales (según lo determinado por el idioma seleccionado) para parecerse a una escritura mística. Además, algunos caracteres se trasladan al rango de emojis, mejorando la apariencia natural del cifrado.
+
+6. Formato: El mensaje final consiste en 3 líneas: cifrado, apodo y clave pública. Antes y después del bloque de cifrado, pueden insertarse líneas adicionales por diversión.
+
+7. El algoritmo no emplea un mecanismo para detectar si la contraseña fue correcta o incorrecta. Esto enfurece al hacker, porque él tendrá que detectar eso por su cuenta para cada posible combinación de contraseñas que pueda adivinar y eso le llevará mucho tiempo.
+
+8. Si un hacker puede probar 1 millón de contraseñas por segundo y la contraseña original tenía 21 caracteres de longitud, todo el proceso de hackeo del mensaje tomará ¡1.02 billones de billones de años! ¡Sí, leíste bien!
+
+9. Para información altamente clasificada utiliza siempre una contraseña FUERTE. Si no lo haces, un hacker podría usar tablas arcoíris o diccionarios de palabras para hackear tu mensaje en minutos. Este es probablemente el punto más importante y es válido para todas las contraseñas que jamás uses en tu vida diaria. ¡No lo olvides!
+
+10. Los analistas podrían usar redes neuronales y difusión estable para ELIMINAR EL RUIDO de tu mensaje cifrado. Si parte del contenido del mensaje puede ser adivinado (es decir, líneas vacías al principio o al final o nombres o ubicaciones), esto permite a los hackers usar un enfoque probabilístico. Luego pueden calcular miles de mensajes posibles dentro de tu cifrado y seleccionar el más obvio. Simplemente suponen que tu mensaje está sobrepuesto por ruido y luego intentan eliminar ese ruido hasta el punto en que pueden asumir el texto (como un generador de texto a imagen, que toma una imagen de ruido y un texto para crear una imagen).

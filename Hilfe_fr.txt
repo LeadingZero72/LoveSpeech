@@ -1,0 +1,96 @@
+À PROPOS :
+Avez-vous déjà rêvé de laisser des messages secrets en ligne que seules certaines personnes peuvent lire ? Avec LoveSpeech, vos messages sont chiffrés par mot de passe puis transformés pour ressembler à une langue étrangère parsemée d'émojis. Vous disposerez d’une liste d’utilisateurs complète avec des noms d’utilisateur et des mots de passe, ce qui vous permettra de publier des messages secrets en ligne pour des individus spécifiques et de lire également leurs communications secrètes. Et le meilleur dans tout ça ? Vous pouvez le faire à la vue de tous ! Que ce soit sur Facebook, X (anciennement Twitter), YouTube, et plus encore, vos messages resteront un mystère... à moins que vous ne soyez sur la liste d'amis de quelqu'un. Taquinez vos amis en publiant des commentaires chiffrés ou formez même des sociétés secrètes avec des groupes d'utilisateurs fermés qui échangent des messages cachés à découvert. De plus, vous pouvez également chiffrer et partager publiquement votre liste d'amis. N'hésitez pas à créer vos propres mots de passe ou à générer des mots de passe forts (recommandé) d'un simple clic. LoveSpeech ajoute un tout nouveau niveau d'excitation à la communication en ligne !
+
+LANGUES :
+1. Cliquez sur le globe dans le coin supérieur droit de la barre de l'application. Sélectionnez la langue que vous préférez.
+
+CRYPTAGE :
+1. Choisissez un pseudonyme et un mot de passe pour vous.
+2. Choisissez un style (le style par défaut est le jeu de caractères en braille pour les aveugles).
+3. Tapez votre message secret.
+4. Appuyez sur <Chiffrer>.
+5. Le code a été copié dans le presse-papiers et peut être publié sur des plateformes de médias sociaux.
+
+DÉCRYPTAGE :
+1. Si vous trouvez un message LoveSpeech sur Internet, copiez-le d'abord dans votre presse-papiers.
+2. Retournez à cette application. Ce presse-papiers apparaîtra automatiquement.
+3. Appuyez sur <Déchiffrer>.
+4. Le message original a été affiché.
+
+STYLES :
+1. Cliquez sur le drapeau.
+2. Sélectionnez un style dans le menu :
+- Neutre = Ensemble de caractères ASCII standard 0..0xFF
+- Russe = Ensemble de caractères cyrilliques 0x400..0x4FF
+- Arabe = Ensemble de caractères arabes 0x600..0x6FF
+- Chinois (rare) = Ensemble de caractères asiatiques 0x3400..0x34FF
+- Chinois (commun) = Ensemble de caractères asiatiques 0x4E00..0x4EFF
+- Yi - Symboles = Ensemble de caractères Yi (Feng Shui) 0xA000..0xA0FF
+- Coréen = Ensemble de caractères coréens 0xAC00..0xACFF
+- Hiéroglyphique = Ensemble de caractères hiéroglyphiques de l'Égypte ancienne 0x13000..0x130FF
+- Motifs en braille = Ensemble de caractères pour les aveugles
+- Sumérien = Ensemble de caractères sumériens anciens (Windows uniquement)
+- Minoen = Ensemble de caractères minoens anciens (Windows uniquement)
+- Symboles Bamum = Ensemble de caractères Bamum africains (Windows uniquement)
+
+ÉMOJIS :
+- Cliquez sur le symbole Emoji dans le coin supérieur droit de l'application pour activer ou désactiver les émojis.
+
+THÈMES :
+- Cliquez sur le symbole d'image dans le coin supérieur droit et sélectionnez l'une des images du menu pour changer le design.
+
+AMIS :
+- Cliquez sur le symbole + dans le coin supérieur droit de l'application. Entrez maintenant un pseudonyme et un mot de passe (ou générez un mot de passe fort).
+- Cliquez sur un nom dans la liste d'amis pour changer son mot de passe.
+
+EXPORTER LA LISTE D'UTILISATEURS :
+- Cliquez sur Exporter la liste d'utilisateurs. Votre liste d'amis apparaîtra maintenant dans la fenêtre de texte. Vous pouvez l'encrypter et la partager sur Internet ou via une application de messagerie.
+
+ENVOYER UN EMAIL :
+- Entrez du texte.
+- Chiffrez-le ou non (comme vous le souhaitez).
+- Cliquez sur la flèche dans le coin droit du champ de texte.
+- Un menu s'ouvre.
+- Entrez une adresse e-mail valide et un sujet (optionnel).
+- Appuyez sur <Envoyer>.
+- Votre application de messagerie par défaut s'ouvrira prête à envoyer le message.
+
+IMPORTER LA LISTE D'UTILISATEURS :
+- Obtenez la liste d'amis de quelqu'un. Cela peut être chiffré ou non. Si c'est chiffré, cliquez sur <déchiffrer> pour obtenir le texte brut.
+- Cliquez sur Importer la liste d'utilisateurs. Tous les utilisateurs de cette liste seront importés dans votre liste d'amis. Si un pseudonyme existe déjà, seul le mot de passe sera mis à jour.
+
+CRÉER UNE SOCIÉTÉ SECRÈTE :
+- Pour créer une société secrète, créez un nom et un mot de passe et partagez-les avec des amis.
+- Obtenez également leurs listes d'amis pour lire leurs commentaires ou utilisez un ami commun pour toute la société.
+- Pour partager des noms et des mots de passe, chiffrez-les simplement et publiez-les sur Internet ou envoyez-les par e-mail. Une fois que tous vos amis ont reçu la liste d'amis, supprimez à nouveau ce post.
+- Vous pouvez continuer à partager des informations secrètes sur Internet, après que votre société secrète a partagé tous ses mots de passe. Personne ne pourra jamais déchiffrer vos messages.
+- Des amis individuels peuvent être exclus simplement en changeant les mots de passe.
+
+PROBLÈMES :
+Assurez-vous d'avoir sélectionné le bon ami lors du chiffrement du texte. Cela peut être vous ou un ami de votre liste.
+
+Assurez-vous de publier tout depuis le presse-papiers, après le chiffrement. Sinon, vos lecteurs ne pourront pas déchiffrer ce que vous avez écrit.
+
+Assurez-vous de récupérer tout dans le presse-papiers lors du déchiffrement. Sinon, le format ne pourra pas être détecté, le nom d'utilisateur et la clé publique ne seront pas reconnus et aucun déchiffrement n'aura lieu.
+
+ALGORITHME :
+
+1. Génération aléatoire de clé publique : Chaque fois qu'un message est chiffré, une clé publique aléatoire est générée et transmise avec le pseudonyme pour garantir l'unicité. La clé privée et la clé publique sont combinées.
+
+2. Multiples chiffrages : L'ensemble du message est chiffré plusieurs fois en fonction de sa longueur, avec un minimum de 3 chiffrages. Cela garantit qu'un hacker doit déchiffrer l'intégralité du texte lors d'une attaque par force brute avant de pouvoir tester si le résultat lui convient.
+
+3. Chiffrement étendu des caractères : Chaque caractère du message est chiffré plusieurs fois, détruisant sa nature même.
+
+4. Auto-modification : À chaque accès au mot de passe, celui-ci est auto-modifié/mélangé, l'indice de mot de passe se comporte de manière chaotique, l'algorithme change de temps en temps et le mot de passe est progressivement étendu à 256 octets.
+
+5. Déguisement : Après le chiffrement, le code est déplacé dans la plage des ensembles de caractères Unicode internationaux (comme déterminé par la langue choisie) afin de ressembler à une écriture mystique. De plus, certains caractères sont déplacés dans la plage des émojis, améliorant l'apparence naturelle du code.
+
+6. Formatage : Le message final se compose de 3 lignes : code, pseudonyme et clé publique. Avant et après le bloc de chiffrement, des lignes supplémentaires peuvent être insérées pour le plaisir.
+
+7. L'algorithme n'emploie aucun mécanisme pour détecter si le mot de passe était correct ou incorrect. Cela rend un hacker en colère, car il devra le détecter lui-même pour chaque combinaison possible de mots de passe qu'il pourrait deviner, ce qui lui prendra beaucoup de temps.
+
+8. Si un hacker peut tester 1 million de mots de passe par seconde et que le mot de passe original faisait 21 caractères de long, l'ensemble du processus de piratage du message prendra 1,02 billion de billions d'années ! Oui, vous avez bien lu!
+
+9. Pour les informations hautement confidentielles, utilisez toujours un mot de passe FORT. Si vous ne le faites pas, un hacker pourrait utiliser des tables arc-en-ciel ou des dictionnaires de mots pour pirater votre message en quelques minutes. C'est probablement le point le plus important et cela s'applique à tous les mots de passe que vous utiliserez dans votre vie quotidienne. N'oubliez pas !
+
+10. Les analyses peuvent utiliser des réseaux neuronaux et une diffusion stable pour ÉLIMINER LE BRUIT de votre message crypté. Si une partie du contenu du message peut être devinée (c'est-à-dire des lignes vides au début ou à la fin ou des noms ou des emplacements), cela permet aux hackers d'utiliser une approche probabiliste. Ils peuvent alors calculer des milliers de messages possibles dans votre code et sélectionner le plus évident. Ils supposeront simplement que votre message est superposé par du bruit et essaieront ensuite de débruitiser jusqu'à ce qu'ils puissent supposer le texte (comme un générateur de texte à image, qui prend une image de bruit et un texte pour créer une image).
