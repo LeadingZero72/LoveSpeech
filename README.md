@@ -14,23 +14,24 @@ You can export or import buddy lists. You export your buddy list, encrypt it and
 
 Emojis can be turned on or off at will, depending on the mood.
 
+The software is now multilinguar and supports German, English, Spanish, Frensh and Italian, including buttons, messages and the help screen.
 
 The Algorithm
 
 An additional public key is generated for each encryption to ensure uniqueness.
+Both keys are combined. The resulting password is then duplicated to create a list of password-indices.
 
-Both are combined, chopped up and mysteriously extended to 256 bytes. A list of 256 password runners is then generated and the password is self-modified thousands of times,
-just to initialize it. The actual password runner behaves chaotically.
+The whole message is encrypted multiple times, depending on its length maybe hundrends of times, but at least 3x.
 
-All processes in the algorithm are controlled only by the password, which is self-modified hundreds of times with each access. At the same time, it is ensured that the chaotic password runner is replaced every now and then in order to flip the algorithm in an unpredictable way. 
+Every single rune of the message is processed in a loop, that runs hundreds of XOR-encryptions using password bytes. At the same time the password is constantly chopped up and self-modified. The password-index junps around chaotically, only being controlled by the momentary state of the password, which constantly changes.
 
-The entire text is encrypted hundreds of times depending on its length, but at least 3x.
+From time to time, the password-index is swapped with one from the list of password-indices to "break the chain" and make things even more irritating. When this happens, the password and password-indices are either extended one step further towards a size of 256 or shrunk further down towards a size of 128 entries, which means that the password and password-indices are morphing between 128 and 256 entries every now and then.
 
-Every single text character is encrypted hundreds of times, but at least 32 times.
-
-The resulting cipher code is now moved in the Unicode area so that the desired symbols can be seen. The decryption process is reversed. Only one routine is needed for encryption and decryption.
+The resulting cipher code is now moved in the upper Unicode range so that the desired symbols can be seen. The decryption process is reversed. Only one routine is needed for encryption and decryption.
 
 The cipher code is structured in 3 lines, so that the encrypted message follows first, then the user name and then the public key. There can be lines with other things above and below. When decrypting, a line is first searched for that has a known user name and then the password is taken and the cipher is decrypted.
+
+The algorithm is very diligent. If the message "Test" is encrypted, it will do hundreds of loops around the message, hundreds of thousands of encryptions will take place, the password is accessed millions of times and the final state of the password morphing around is unknown.
 
 GOALS:
 
