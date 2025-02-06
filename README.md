@@ -6,7 +6,7 @@ Private Encryption for Social Media. Disguise your posts, only your friends can 
 
 With this app you encrypt your shitposts, which are secured with a password, disguised as foreign symbolism and decorated with emojis to make it look funnier. Only friends will be able to read your messages. For everyone else it will remain a mysterious wonder.
 
-There are 25 amazing app themes for every user.
+There are 30 amazing app themes for every user.
 
 Choose from different styles such as Russian, Arabic, Chinese, Korean, Hieroglyph, Braille of the Blind, Sumerian, Feng Shui and African Bamum Symbols.
 
