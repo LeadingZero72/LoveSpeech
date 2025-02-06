@@ -1,6 +1,6 @@
 LoveSpeech 1.0
 
-This is the source code of ​​my app <LoveSpeech>. I had the idea around 2006, but was prevented from implementing it. Now, here it is.
+This is the source code of ​​my app <LoveSpeech>. I had the idea around 2006, but was prevented from releasing it. Now, here it is.
 
 Private Encryption for Social Media. Disguise your posts, only your friends can read.
 
