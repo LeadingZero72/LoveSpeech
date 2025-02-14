@@ -4,7 +4,7 @@ This is the source code of ​​my app <LoveSpeech>. I had the idea around 2006
 
 Private Encryption for Social Media. Disguise your posts, only your friends can read.
 
-With this app you encrypt your shitposts, which are secured with a password, disguised as foreign symbolism and decorated with emojis to make it look funnier. Only friends will be able to read your messages. For everyone else it will remain a mysterious wonder.
+With this app you encrypt your shitposts, which are secured with a password, disguised as occult symbolism and decorated with emojis to make it look funnier. Only friends will be able to read your messages. For everyone else it will remain a mysterious wonder.
 
 There are 30 amazing app themes for every user.
 
@@ -19,19 +19,17 @@ The software is now multilinguar and supports German, English, Spanish, Frensh a
 The Algorithm
 
 An additional public key is generated for each encryption to ensure uniqueness.
-Both keys are combined. The resulting password is then duplicated to create a list of password-indices.
+Both keys are combined. The resulting password is then duplicated to create an n-dimensional vector used to access the password.
 
 The whole message is encrypted multiple times, depending on its length maybe hundrends of times, but at least 3x.
 
-Every single rune of the message is processed in a loop, that runs hundreds of XOR-encryptions using password bytes. At the same time the password is constantly chopped up and self-modified. The password-index junps around chaotically, only being controlled by the momentary state of the password, which constantly changes.
+Every single rune of the message is processed in a loop, that runs hundreds of XOR-encryptions using password bytes. The vector used for accessing the password is n-dimensional and constantly changes its dimensions. The passwort grows to 256 characters and then begins to constantly shrink and grow. At the same time the password is constantly chopped up and self-modified.
 
-From time to time, the password-index is swapped with one from the list of password-indices to "break the chain" and make things even more irritating. When this happens, the password and password-indices are either extended one step further towards a size of 256 or shrunk further down towards a size of 128 entries, which means that the password and password-indices are morphing between 128 and 256 entries every now and then.
-
-The resulting cipher code is now moved in the upper Unicode range so that the desired symbols can be seen. The decryption process is reversed. Only one routine is needed for encryption and decryption.
+The resulting cipher code is now moved in the upper Unicode range so that the desired symbolism can be seen. The decryption process is reversed. Only one routine is needed for encryption and decryption.
 
 The cipher code is structured in 3 lines, so that the encrypted message follows first, then the user name and then the public key. There can be lines with other things above and below. When decrypting, a line is first searched for that has a known user name and then the password is taken and the cipher is decrypted.
 
-The algorithm is very diligent. If the message "Test" is encrypted, it will do hundreds of loops around the message, hundreds of thousands of encryptions will take place, the password is accessed millions of times and the final state of the password morphing around is unknown.
+The algorithm is very diligent. If the message "Test" is encrypted, it will do hundreds of loops around the message, hundreds of thousands of encryptions will take place, the password is accessed millions of times.
 
 GOALS:
 
