@@ -23,7 +23,7 @@ Both keys are combined. The resulting password is then duplicated to create an n
 
 The whole message is encrypted multiple times, depending on its length maybe hundrends of times, but at least 3x.
 
-Every single rune of the message is processed in a loop, that runs hundreds of XOR-encryptions using password bytes. The vector used for accessing the password is n-dimensional and constantly changes its dimensions. The passwort grows to 256 characters and then begins to constantly shrink and grow. At the same time the password is constantly chopped up and self-modified.
+Every single rune of the message is processed in a loop, that runs hundreds of XOR-encryptions using password bytes. The vector used for accessing the password is n-dimensional and constantly changes its dimensions. The passwort grows to 256 characters and then begins to constantly shrink and grow. All the same time the password is chopped up and self-modified.
 
 The resulting cipher code is now moved in the upper Unicode range so that the desired symbolism can be seen. The decryption process is reversed. Only one routine is needed for encryption and decryption.
 
