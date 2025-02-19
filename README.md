@@ -16,7 +16,7 @@ Emojis can be turned on or off at will, depending on the mood.
 
 The software is now multilinguar and supports German, English, Spanish, Frensh and Italian, including buttons, messages and the help screen.
 
-The Algorithm
+The Algorithm 
 
 An additional public key is generated for each encryption to ensure uniqueness.
 Both keys are combined. The resulting password is then duplicated to create an n-dimensional vector used to access the password.
